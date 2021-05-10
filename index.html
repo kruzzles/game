@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Cool game </title>
+</head>
+<body style="background-color: black;">
+    <h1 style="color: white; text-align: center;"> Search the correct term. If you do not search the correct thing
+        it will not do anything, however something will happen if you search the correct thing. (this doesnt work on mobile)
+    </h1>
+    <br>
+    <br>
+    <div class="searchthing">
+        <input type="search" value="" id="search" onchange="openPage()" placeholder="search here...">
+    </div>
+        <script>
+            function openPage() {
+                var x = document.getElementById("search").value;
+    
+                if (x === "kruzzles is cool") {
+                    window.open("https://www.youtube.com/watch?v=Fq-F04qB0IM");
+                } 
+            }
+    </script>
+</body>
+</html>
